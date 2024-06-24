@@ -1,3 +1,9 @@
+# Project binary
+rss-gopher
+
+# Environment Variables
+.env
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
