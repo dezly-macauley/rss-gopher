@@ -4,6 +4,9 @@ rss-gopher
 # Environment Variables
 .env
 
+# My Thunder Client test notes
+vs_code_thunder_client_notes.md
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
