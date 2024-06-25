@@ -47,6 +47,17 @@ func main() {
         MaxAge: 300,
     }))
 
+
+    // NOTE: Creating a new router
+
+    v1Router := chi.NewRouter()
+
+    // The handler readiness function is being connected to the 
+    // "/healthz" path
+    v1Router.HandleFunc("/healthz", handlerReadiness)
+
+    router.Mount("/v1", v1Router)
+
     // NOTE: This server is going to be a JSON rest API
     // This means that all the requests and responses will have a JSON format
 
